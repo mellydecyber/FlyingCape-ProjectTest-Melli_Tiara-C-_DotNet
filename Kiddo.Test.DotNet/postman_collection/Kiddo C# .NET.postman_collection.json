@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "43ff5ccc-9cd2-4a06-9724-3f9074e81281",
+		"name": "Kiddo C# .NET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4080191"
+	},
+	"item": [
+		{
+			"name": "Partner With Filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/api/partner/filter?keyword=minds",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"partner",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "minds"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Class With Filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/api/classes/filter?keyword=minds",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"classes",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "minds"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Class",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/api/classes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Partner",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/api/partner",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"partner"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5155"
+		}
+	]
+}
