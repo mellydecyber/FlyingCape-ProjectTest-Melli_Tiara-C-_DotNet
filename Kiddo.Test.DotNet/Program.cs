@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IClassRepository>(provider =>
 {
     string classJsonFilePath = builder.Configuration.GetValue<string>("ClassJsonFilePath") ?? "";
-    if (classJsonFilePath == null)
+    if (classJsonFilePath == "")
     {
         throw new InvalidOperationException("ClassJsonFilePath is null. Check your configuration.");
     }
@@ -23,7 +23,7 @@ builder.Services.AddScoped<IClassService, ClassService>();
 builder.Services.AddSingleton<IPartnerRepository>(provider =>
 {
     string partnerJsonFilePath = builder.Configuration.GetValue<string>("PartnerJsonFilePath") ?? "";
-    if (partnerJsonFilePath == null)
+    if (partnerJsonFilePath == "")
     {
         throw new InvalidOperationException("PartnerJsonFilePath is null. Check your configuration.");
     }

@@ -12,12 +12,12 @@ namespace Kiddo.Test.Dotnet.Service
             _classRepository = classRepository;
         }
 
-        public IEnumerable<ClassPartner> GetAllClasses()
+        public IEnumerable<Class> GetAllClasses()
         {
             return _classRepository.GetAllClasses();
         }
 
-        public IEnumerable<ClassPartner> FilterClasses(string? keyword, string? classTypeName)
+        public IEnumerable<Class> FilterClasses(string? keyword, string? classTypeName)
         {
             return _classRepository.FilterClasses(keyword, classTypeName);
         }

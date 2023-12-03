@@ -16,13 +16,13 @@ namespace Kiddo.Test.Dotnet.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<ClassPartner> GetAllPartner()
+        public IEnumerable<Partner> GetAllPartner()
         {
             return _partnerService.GetAllPartner();
         }
 
         [HttpGet("filter")]
-        public IEnumerable<ClassPartner> FilterPartner([FromQuery] string? keyword)
+        public IEnumerable<Partner> FilterPartner([FromQuery] string? keyword)
         {
             return _partnerService.FilterPartner(keyword);
         }

@@ -4,7 +4,7 @@ namespace Kiddo.Test.Dotnet.Service
 {
     public interface IClassService
     {
-        IEnumerable<ClassPartner> GetAllClasses();
-        IEnumerable<ClassPartner> FilterClasses(string? keyword, string? classTypeName);
+        IEnumerable<Class> GetAllClasses();
+        IEnumerable<Class> FilterClasses(string? keyword, string? classTypeName);
     }
 }

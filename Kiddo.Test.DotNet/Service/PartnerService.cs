@@ -12,12 +12,12 @@ namespace Kiddo.Test.Dotnet.Service
             _partnerRepository = partnerRepository;
         }
 
-        public IEnumerable<ClassPartner> GetAllPartner()
+        public IEnumerable<Partner> GetAllPartner()
         {
             return _partnerRepository.GetAllPartner();
         }
 
-        public IEnumerable<ClassPartner> FilterPartner(string? keyword)
+        public IEnumerable<Partner> FilterPartner(string? keyword)
         {
             return _partnerRepository.FilterPartner(keyword);
         }

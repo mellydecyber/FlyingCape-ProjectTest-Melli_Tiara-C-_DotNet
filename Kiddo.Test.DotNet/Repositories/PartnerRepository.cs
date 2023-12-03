@@ -12,17 +12,17 @@ namespace Kiddo.Test.Dotnet.Repository
             _jsonFilePath = jsonFilePath;
         }
 
-        public IEnumerable<ClassPartner> GetAllPartner()
+        public IEnumerable<Partner> GetAllPartner()
         {
             string jsonContent = File.ReadAllText(_jsonFilePath);
-            List<ClassPartner>? classPartners = JsonSerializer.Deserialize<List<ClassPartner>>(jsonContent);
+            List<Partner>? Partners = JsonSerializer.Deserialize<List<Partner>>(jsonContent);
 
-            return classPartners ?? new List<ClassPartner>();
+            return Partners ?? new List<Partner>();
         }
 
-        public IEnumerable<ClassPartner> FilterPartner(string? keyword)
+        public IEnumerable<Partner> FilterPartner(string? keyword)
         {
-            IEnumerable<ClassPartner> allPartner = GetAllPartner();
+            IEnumerable<Partner> allPartner = GetAllPartner();
 
             if (!string.IsNullOrEmpty(keyword))
             {

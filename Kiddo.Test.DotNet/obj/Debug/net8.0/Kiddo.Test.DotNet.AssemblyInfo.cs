@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kiddo.Test.DotNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54b94a5820f2262bbcaf356b1cae58f7ddb2c913")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kiddo.Test.DotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kiddo.Test.DotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

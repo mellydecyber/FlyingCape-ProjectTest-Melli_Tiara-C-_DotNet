@@ -1,6 +1,6 @@
 namespace Kiddo.Test.Dotnet.Models;
 
-public class ClassPartner
+public class Partner
 {
     public int SchoolID { get; set; }
     public string SchoolName { get; set; } = "";

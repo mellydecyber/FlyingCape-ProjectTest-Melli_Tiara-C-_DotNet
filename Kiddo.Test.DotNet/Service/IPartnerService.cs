@@ -4,7 +4,7 @@ namespace Kiddo.Test.Dotnet.Service
 {
     public interface IPartnerService
     {
-        IEnumerable<ClassPartner> GetAllPartner();
-        IEnumerable<ClassPartner> FilterPartner(string? keyword);
+        IEnumerable<Partner> GetAllPartner();
+        IEnumerable<Partner> FilterPartner(string? keyword);
     }
 }
