@@ -22,9 +22,9 @@ namespace Kiddo.Test.Dotnet.Controllers
         }
 
         [HttpGet("filter")]
-        public IEnumerable<Class> FilterClasses([FromQuery] string? keyword, [FromQuery] string? classTypeName)
+        public IEnumerable<Class> FilterClasses([FromQuery] string? keyword, [FromQuery] string? type)
         {
-            return _classService.FilterClasses(keyword, classTypeName);
+            return _classService.FilterClasses(keyword, type);
         }
     }
 }

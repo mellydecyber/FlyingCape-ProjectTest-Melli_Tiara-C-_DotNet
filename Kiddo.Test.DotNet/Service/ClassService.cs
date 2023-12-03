@@ -17,9 +17,9 @@ namespace Kiddo.Test.Dotnet.Service
             return _classRepository.GetAllClasses();
         }
 
-        public IEnumerable<Class> FilterClasses(string? keyword, string? classTypeName)
+        public IEnumerable<Class> FilterClasses(string? keyword, string? type)
         {
-            return _classRepository.FilterClasses(keyword, classTypeName);
+            return _classRepository.FilterClasses(keyword, type);
         }
     }
 }

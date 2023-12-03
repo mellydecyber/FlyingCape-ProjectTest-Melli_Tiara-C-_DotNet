@@ -20,22 +20,23 @@ namespace Kiddo.Test.Dotnet.Repository
             return Partners ?? new List<Class>();
         }
 
-        public IEnumerable<Class> FilterClasses(string? keyword, string? classTypeName)
+        public IEnumerable<Class> FilterClasses(string? keyword, string? type)
         {
             IEnumerable<Class> allClasses = GetAllClasses();
 
             if (!string.IsNullOrEmpty(keyword))
             {
                 allClasses = allClasses.Where(c =>
-                    c.ClassName.Contains(keyword, StringComparison.OrdinalIgnoreCase));
+                    c.ClassName.Contains(keyword, StringComparison.OrdinalIgnoreCase)
+                    || c.SchoolName.Contains(keyword, StringComparison.OrdinalIgnoreCase));
             }
 
-            if (!string.IsNullOrEmpty(classTypeName))
+            if (!string.IsNullOrEmpty(type))
             {
                 // Filter by ClassTypeName
                 allClasses = allClasses.Where(c =>
                     c.ClassTypeName != null &&
-                    c.ClassTypeName.Equals(classTypeName, StringComparison.OrdinalIgnoreCase));
+                    c.ClassTypeName.Equals(type, StringComparison.OrdinalIgnoreCase));
             }
 
             return allClasses;
