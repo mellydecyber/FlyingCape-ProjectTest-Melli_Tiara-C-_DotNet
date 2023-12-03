@@ -20,6 +20,18 @@ builder.Services.AddSingleton<IClassRepository>(provider =>
 
 builder.Services.AddScoped<IClassService, ClassService>();
 
+builder.Services.AddSingleton<IPartnerRepository>(provider =>
+{
+    string partnerJsonFilePath = builder.Configuration.GetValue<string>("PartnerJsonFilePath") ?? "";
+    if (partnerJsonFilePath == null)
+    {
+        throw new InvalidOperationException("PartnerJsonFilePath is null. Check your configuration.");
+    }
+    return new PartnerRepository(partnerJsonFilePath);
+});
+
+builder.Services.AddScoped<IPartnerService, PartnerService>();
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
