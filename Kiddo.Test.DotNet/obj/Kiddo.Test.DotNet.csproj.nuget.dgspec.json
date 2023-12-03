@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mdcxxvii/MDC/project/source_code/project-test-kiddo-c/Kiddo.Test.DotNet/Kiddo.Test.DotNet.csproj": {}
+  },
+  "projects": {
+    "/Users/mdcxxvii/MDC/project/source_code/project-test-kiddo-c/Kiddo.Test.DotNet/Kiddo.Test.DotNet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mdcxxvii/MDC/project/source_code/project-test-kiddo-c/Kiddo.Test.DotNet/Kiddo.Test.DotNet.csproj",
+        "projectName": "Kiddo.Test.DotNet",
+        "projectPath": "/Users/mdcxxvii/MDC/project/source_code/project-test-kiddo-c/Kiddo.Test.DotNet/Kiddo.Test.DotNet.csproj",
+        "packagesPath": "/Users/mdcxxvii/.nuget/packages/",
+        "outputPath": "/Users/mdcxxvii/MDC/project/source_code/project-test-kiddo-c/Kiddo.Test.DotNet/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mdcxxvii/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

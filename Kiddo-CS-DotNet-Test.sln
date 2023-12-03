@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiddo-CS-DotNet-Test", "Kiddo-CS-DotNet-Test\Kiddo-CS-DotNet-Test.csproj", "{297D666F-C4A9-45CB-B652-D17D4DB7D919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiddo.Test.2", "Kiddo.Test.2\Kiddo.Test.2.csproj", "{C4943032-9264-4483-BAA8-000B30925D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiddo.Test.DotNet", "Kiddo.Test.DotNet\Kiddo.Test.DotNet.csproj", "{AE61F85D-82EA-49C3-9DFB-EC714D1CF115}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{297D666F-C4A9-45CB-B652-D17D4DB7D919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297D666F-C4A9-45CB-B652-D17D4DB7D919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297D666F-C4A9-45CB-B652-D17D4DB7D919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297D666F-C4A9-45CB-B652-D17D4DB7D919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4943032-9264-4483-BAA8-000B30925D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4943032-9264-4483-BAA8-000B30925D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4943032-9264-4483-BAA8-000B30925D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4943032-9264-4483-BAA8-000B30925D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE61F85D-82EA-49C3-9DFB-EC714D1CF115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE61F85D-82EA-49C3-9DFB-EC714D1CF115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE61F85D-82EA-49C3-9DFB-EC714D1CF115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE61F85D-82EA-49C3-9DFB-EC714D1CF115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

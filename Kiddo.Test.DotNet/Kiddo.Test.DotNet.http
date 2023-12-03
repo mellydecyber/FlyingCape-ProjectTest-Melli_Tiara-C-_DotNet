@@ -1,0 +1,6 @@
+@Kiddo.Test.DotNet_HostAddress = http://localhost:5155
+
+GET {{Kiddo.Test.DotNet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
